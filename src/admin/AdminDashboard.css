@@ -1,0 +1,187 @@
+/* General container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #34495e;  /* Darker background for better contrast */
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header style */
+h1 {
+    font-size: 2.5rem;
+    color: #ecf0f1;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Button hover effect */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Darker button hover */
+button:hover {
+    background-color: #2c3e50;  /* Darker hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Table styles */
+.table {
+    margin-top: 30px;
+    background-color: #ecf0f1;  /* Lighter background for the table */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-spacing: 0;
+}
+
+/* Table header */
+.table th {
+    background-color: #1abc9c;  /* Bright green header */
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* Table cells */
+.table th, .table td {
+    text-align: left;
+    vertical-align: middle;
+    padding: 14px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Table row styling */
+.table td {
+    background-color: #ffffff;  /* White background for rows */
+    color: #34495e;  /* Darker text color for contrast */
+    font-size: 1rem;
+    border-bottom: 1px solid #ecf0f1;  /* Soft divider between rows */
+}
+
+/* Table row hover effect */
+.table tr:hover {
+    background-color: #f4f4f4;  /* Light gray hover effect */
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table action buttons */
+.table button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Edit button */
+.table button.warning {
+    background-color: #f1c40f;  /* Amber yellow for edit */
+    color: white;
+    border: none;
+}
+
+.table button.warning:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Delete button */
+.table button.danger {
+    background-color: #e74c3c;  /* Red for delete */
+    color: white;
+    border: none;
+}
+
+.table button.danger:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Primary action button */
+.table .btn-primary {
+    background-color: #3498db;  /* Blue for primary actions */
+    color: white;
+    border: none;
+}
+
+.table .btn-primary:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Modal header */
+.modal-header {
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Modal body */
+.modal-body {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+/* Form label styles */
+.form-label {
+    font-weight: bold;
+    color: #ecf0f1;
+    font-size: 1.1rem;
+}
+
+/* Action buttons section */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Styling for action buttons */
+.action-buttons button {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+        padding: 12px 10px;
+    }
+
+    .action-buttons button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
